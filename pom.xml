@@ -21,7 +21,7 @@
     </modules>
     <packaging>pom</packaging>
 
-    <name>advancejava</name>
+    <name>AdvancedJava</name>
     <description>parent-project</description>
     <url>http://maven.apache.org</url>
 

@@ -5,7 +5,6 @@ package toast.message;
  */
 
 import button.ImageButton;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import javax.swing.*;
 import javax.swing.Timer;
@@ -13,7 +12,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.geom.RoundRectangle2D;
-import java.util.*;
 import java.util.List;
 import java.util.concurrent.*;
 

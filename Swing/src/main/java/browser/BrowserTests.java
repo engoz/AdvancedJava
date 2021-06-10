@@ -4,6 +4,7 @@ package browser;
  * Created by enginoz on 22.12.2017.
  */
 
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Region;
