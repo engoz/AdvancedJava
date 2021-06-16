@@ -20,11 +20,7 @@ public class BehaviorParamterization {
         List<String> names = Arrays.asList("Enes","Engin",".firat");
         System.out.println(getResultByBehavior(names,n->n.contains("E")));
         System.out.println(getResultByBehavior(numbers,n->n % 2 == 0));
-
-
     }
-
-
 
     public static <T> Collection<T> getResultByBehavior(final List<T> list, final NumbersPredicate<T> predicate){
         final Collection<T> result = new ArrayList<>();

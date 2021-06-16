@@ -18,6 +18,7 @@
         <module>Enums</module>
         <module>CertificatedExample</module>
         <module>Clazz</module>
+        <module>ProtoExample</module>
     </modules>
     <packaging>pom</packaging>
 
