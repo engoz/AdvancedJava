@@ -19,6 +19,7 @@
         <module>CertificatedExample</module>
         <module>Clazz</module>
         <module>ProtoExample</module>
+        <module>JavaNewFeatures</module>
     </modules>
     <packaging>pom</packaging>
 
