@@ -20,6 +20,7 @@
         <module>Clazz</module>
         <module>ProtoExample</module>
         <module>JavaNewFeatures</module>
+        <module>DateUtils</module>
     </modules>
     <packaging>pom</packaging>
 
