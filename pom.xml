@@ -21,6 +21,7 @@
         <module>ProtoExample</module>
         <module>JavaNewFeatures</module>
         <module>DateUtils</module>
+        <module>ExceptionHandling</module>
     </modules>
     <packaging>pom</packaging>
 
