@@ -17,7 +17,7 @@ public class BigDecimalDemo {
 
         String str = "Minimum Value among " + bg1 + " and " + bg2 + " is " + bg3;
 
-        BigDecimal value = new BigDecimal("11.2");
+        BigDecimal value = new BigDecimal("1235537.19");
         int intValue = value.setScale(0, RoundingMode.UP).intValue();
         System.out.println("Raoundig UP " + intValue);
         // print the minimum value

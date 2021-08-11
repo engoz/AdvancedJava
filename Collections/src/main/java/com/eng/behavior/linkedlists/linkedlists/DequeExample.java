@@ -26,12 +26,20 @@ public class DequeExample {
         Deque deque = new LinkedList<String>();
 
         // We can add elements to the queue in various ways
+
+        // Add at the last
         deque.add("Element 1 (Tail)"); // add to tail
+        // Add at the first
         deque.addFirst("Element 2 (Head)");
+        // Add at the last
         deque.addLast("Element 3 (Tail)");
+        // Add at the first
         deque.push("Element 4 (Head)"); //add to head
+        // Add at the last
         deque.offer("Element 5 (Tail)");
+        // Add at the first
         deque.offerFirst("Element 6 (Head)");
+        // Add at the last
         deque.offerLast("Element 7 (Tail)");
 
         System.out.println(deque + "\n");
