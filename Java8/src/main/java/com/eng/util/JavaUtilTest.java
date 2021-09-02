@@ -33,7 +33,22 @@ public class JavaUtilTest {
         System.out.println(stats.getMin());
 
         // sum
-        System.out.println(stats.getSum());
+        System.out.println(stats2.getSum());
+
+        // average
+        System.out.println(stats2.getAverage());
+
+        // count
+        System.out.println(stats2.getCount());
+
+        // max
+        System.out.println(stats2.getMax());
+
+        // min
+        System.out.println(stats2.getMin());
+
+        // sum
+        System.out.println(stats2.getSum());
     }
 }
 
