@@ -14,6 +14,7 @@ public class SupressedExceptions {
         try {
             beforeJava7();
         } catch (Exception ex) {
+            LOGGER.info("Before Java 7");
             LOGGER.log(Level.SEVERE, ex.getMessage());
         }
 
@@ -21,6 +22,7 @@ public class SupressedExceptions {
         try {
             withjava7();
         } catch (Exception ex) {
+            LOGGER.info("Java 7");
             LOGGER.log(Level.SEVERE, ex.getMessage());
             Throwable[] suppressedExceptions = ex.getSuppressed();
             int numSupperessed = suppressedExceptions.length;
