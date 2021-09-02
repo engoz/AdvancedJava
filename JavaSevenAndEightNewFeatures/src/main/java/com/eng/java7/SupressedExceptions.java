@@ -43,8 +43,7 @@ public class SupressedExceptions {
     }
 
     public static void withjava7() throws Exception {
-        try (
-                CustomDirtyResource cr = new CustomDirtyResource();) {
+        try (CustomDirtyResource cr = new CustomDirtyResource()) {
                 cr.readFromResource();
         }
     }

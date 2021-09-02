@@ -32,6 +32,7 @@ public class TryWithResources {
     }
 
     private static void beforeJava7() throws IOException {
+        System.out.println("Before Java7");
         BufferedReader br = null;
         String file = "/Users/enginoz/Works/AdvancedJava/eng.txt";
         try {

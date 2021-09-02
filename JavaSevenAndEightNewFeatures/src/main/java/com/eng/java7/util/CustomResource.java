@@ -1,6 +1,6 @@
 package com.eng.java7.util;
 
-public class CustomResource implements AutoCloseable{
+public class CustomResource implements AutoCloseable {
     @Override
     public void close() throws Exception {
         System.out.println( "From close method inside the CustomResource class");
@@ -8,6 +8,7 @@ public class CustomResource implements AutoCloseable{
 
 
     public void readFromResource() {
+
         System.out.println(" Reading data... ");
     }
 
