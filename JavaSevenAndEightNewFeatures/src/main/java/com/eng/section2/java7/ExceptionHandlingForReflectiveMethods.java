@@ -1,4 +1,4 @@
-package com.eng.java7;
+package com.eng.section2.java7;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.logging.Level;
@@ -21,7 +21,7 @@ public class ExceptionHandlingForReflectiveMethods {
      */
     private static void beforeJava7(){
         try {
-            Class.forName("com.eng.java7.CatchingMultipleExceptions").getMethod("withJava7").invoke(null,new Object[]{});
+            Class.forName("com.eng.section2.java7.CatchingMultipleExceptions").getMethod("withJava7").invoke(null,new Object[]{});
         }  catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException
                 | ClassNotFoundException nex) {
             LOGGER.log(Level.SEVERE, nex.toString());

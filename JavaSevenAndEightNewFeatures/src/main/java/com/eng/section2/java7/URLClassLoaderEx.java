@@ -1,4 +1,4 @@
-package com.eng.java7;
+package com.eng.section2.java7;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

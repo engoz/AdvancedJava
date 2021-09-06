@@ -1,4 +1,4 @@
-package com.eng.java7.util;
+package com.eng.section2.java7.util;
 
 public class CustomDirtyResource implements AutoCloseable{
     @Override

@@ -1,9 +1,8 @@
-package com.eng.java7;
+package com.eng.section2.java7;
 
-import com.eng.java7.util.CustomResource;
+import com.eng.section2.java7.util.CustomResource;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
