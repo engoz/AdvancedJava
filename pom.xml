@@ -23,6 +23,7 @@
         <module>DateUtils</module>
         <module>ExceptionHandling</module>
         <module>HackerRank</module>
+        <module>Algorithms</module>
     </modules>
     <packaging>pom</packaging>
 
