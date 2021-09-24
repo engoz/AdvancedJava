@@ -24,6 +24,7 @@
         <module>ExceptionHandling</module>
         <module>HackerRank</module>
         <module>Algorithms</module>
+        <module>Security</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,6 +1,6 @@
 package com.eng.challenge;
 
-public class FizzBuzz {
+public class SqrtTest {
 
 
     public static void main(String[] args) {
