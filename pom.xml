@@ -25,6 +25,7 @@
         <module>HackerRank</module>
         <module>Algorithms</module>
         <module>Security</module>
+        <module>ConcurrentExample</module>
     </modules>
     <packaging>pom</packaging>
 
