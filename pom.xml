@@ -26,6 +26,7 @@
         <module>Algorithms</module>
         <module>Security</module>
         <module>ConcurrentExample</module>
+        <module>SystemExample</module>
     </modules>
     <packaging>pom</packaging>
 
