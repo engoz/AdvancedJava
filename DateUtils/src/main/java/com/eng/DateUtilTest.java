@@ -106,11 +106,33 @@ public class DateUtilTest {
         return valid;
     }
 
+    public static boolean isWeekend() {
+        Calendar now = Calendar.getInstance(GMT_TIME_ZONE);
+        int day = now.get(Calendar.DAY_OF_WEEK);
+        if (day == Calendar.SATURDAY) {
+            return true;
+        }
+        int hour = now.get(Calendar.HOUR_OF_DAY);
+        if (day == Calendar.FRIDAY) {
+            if (hour >= 21) {
+                return true;
+            }
+        } else if (day == Calendar.SUNDAY) {
+            if (hour < 22) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     public static TimeZone getIstanbulTimeZone(){
         Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         cal.setTimeZone(TimeZone.getTimeZone("Europe/Istanbul"));
         return cal.getTimeZone();
     }
+
+
 
     public static boolean isWeekendCheck(TimeZone timeZone,int startTimeHour, int startTimeMinute, int nowHour, int nowMinute,int endTimeHour, int endTimeMinute) {
         Calendar now = Calendar.getInstance(timeZone);
