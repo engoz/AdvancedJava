@@ -13,10 +13,10 @@ public class LogicalExample {
 
         //two compare
         System.out.println("two compare");
-        System.out.println(a || b); //true
-        System.out.println(c || d); //false
-        System.out.println(a || c); //true
-        System.out.println(c || b); //true
+        System.out.println("true || true - > " + (a || b)); //true
+        System.out.println("false || false - > " + (c || d)); //false
+        System.out.println("true || false - > " + (a || c)); //true
+        System.out.println("false || true - > " + (c || b)); //true
 
         //tree compare
         System.out.println("tree compare");

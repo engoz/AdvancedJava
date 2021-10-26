@@ -14,6 +14,7 @@ public class ArraySortEx1 {
         for(int i=0;i<a.length;i++){
             for(int j=0;j<a.length;j++){
                 int temp=0;
+                System.out.println("Compare a["+i+"] = "+a[i]+" "+"a["+j+"] = "+a[j]);
                 if(a[i]<a[j]){
                     temp=a[j];
                     a[j]=a[i];

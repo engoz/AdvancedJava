@@ -27,6 +27,7 @@
         <module>Security</module>
         <module>ConcurrentExample</module>
         <module>SystemExample</module>
+        <module>StringEx</module>
     </modules>
     <packaging>pom</packaging>
 
