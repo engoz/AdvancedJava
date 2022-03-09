@@ -1,6 +1,7 @@
 package basic.numbers.bigdecimals;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 
 public class BigDecimalTest {
     public static void main(String[] args) {
@@ -34,5 +35,13 @@ public class BigDecimalTest {
         if (zero.equals(BigDecimal.ZERO)) {
             System.out.println("Esitter calisti");
         }
+        System.out.println("negateEx calisti");
+        BigDecimal negateEx = new BigDecimal(100);
+        BigDecimal negate = negateEx.negate();
+        System.out.println("Negate : " + negate);
+
+        BigDecimal leftTickSize = BigDecimal.valueOf(-1, 0);
+        System.out.println(leftTickSize);
+
     }
 }

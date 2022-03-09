@@ -14,22 +14,6 @@ public class TryWithResources {
         withCustomResInJava7();
     }
 
-    private static void withCustomResInJava7() throws Exception {
-        try(CustomResource cr = new CustomResource()){
-            cr.readFromResource();
-        }
-    }
-
-    private static void withJava7() throws IOException {
-        String file = "/Users/enginoz/Works/AdvancedJava/eng.txt";
-        try(BufferedReader br = new BufferedReader(new FileReader(file))){
-            String sCurrentLine;
-            while ((sCurrentLine = br.readLine()) !=null){
-                System.out.println(sCurrentLine);
-            }
-        }
-    }
-
     private static void beforeJava7() throws IOException {
         System.out.println("Before Java7");
         BufferedReader br = null;
@@ -44,4 +28,24 @@ public class TryWithResources {
             br.close();
         }
     }
+
+    private static void withJava7() throws IOException {
+        String file = "/Users/enginoz/Works/AdvancedJava/eng.txt";
+        try(BufferedReader br = new BufferedReader(new FileReader(file))){
+            String sCurrentLine;
+            while ((sCurrentLine = br.readLine()) !=null){
+                System.out.println(sCurrentLine);
+            }
+        }
+    }
+
+    private static void withCustomResInJava7() throws Exception {
+        try(CustomResource cr = new CustomResource()){
+            cr.readFromResource();
+        }
+    }
+
+
+
+
 }

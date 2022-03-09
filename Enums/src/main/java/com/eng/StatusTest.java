@@ -13,5 +13,6 @@ public class StatusTest {
         for (Status s:Status.values()) {
             System.out.println("ALL Values " + s.name());
         }
+
     }
 }

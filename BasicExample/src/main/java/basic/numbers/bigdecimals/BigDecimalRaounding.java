@@ -9,10 +9,12 @@ public class BigDecimalRaounding {
         System.out.println(round(new BigDecimal("12.391"), 1, true)); // => 12.40
         System.out.println(round(new BigDecimal("12.391"), 2, false)); // => 12.39
         System.out.println(round(new BigDecimal("12.399"), 3, false)); // => 12.39
+        System.out.println(round(new BigDecimal("12.399"), 7, true)); // => 12.39
     }
 
     public static BigDecimal round(BigDecimal d, int scale, boolean roundUp) {
         RoundingMode mode = (roundUp) ? RoundingMode.UP : RoundingMode.DOWN;
+
         return d.setScale(scale, mode);
     }
 }

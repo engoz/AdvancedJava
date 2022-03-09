@@ -7,7 +7,7 @@ public class ReverseString {
         // String s =  reverse("Merhaba engin naslsın");
         String s2 =  wordReverse("Merhaba engin naslsın");
         String s3 =  wordReverse2("Merhaba engin naslsın");
-        String s4=  reversedJava8("Merhaba engin naslsın");
+        String s4 =  reversedJava8("Merhaba engin naslsın");
         System.out.println(s2);
         System.out.println(s3);
         System.out.println(s4);

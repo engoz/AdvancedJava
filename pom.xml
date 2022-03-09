@@ -28,6 +28,7 @@
         <module>ConcurrentExample</module>
         <module>SystemExample</module>
         <module>StringEx</module>
+        <module>Nesne</module>
     </modules>
     <packaging>pom</packaging>
 

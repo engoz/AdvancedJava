@@ -21,7 +21,7 @@ public class FactorialCalculator implements Callable<Integer> {
         } else {
             for (int i = 2; i <= number; i++) {
                 result *= i;
-                TimeUnit.MILLISECONDS.sleep(20);
+                TimeUnit.MILLISECONDS.sleep(100);
             }
         }
         System.out.println("Result for number - " + number + " -> " + result);

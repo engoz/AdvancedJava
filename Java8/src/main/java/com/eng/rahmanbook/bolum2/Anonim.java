@@ -1,4 +1,4 @@
-package com.eng.lamda;
+package com.eng.rahmanbook.bolum2;
 
 /**
  * Created by servicium on 30.10.2015.

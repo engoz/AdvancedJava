@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class FutureMain {
-    private static final ExecutorService threadpool = Executors.newFixedThreadPool(3);
+    private static final ExecutorService threadpool = Executors.newFixedThreadPool(1);
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
 
