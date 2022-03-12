@@ -29,6 +29,7 @@
         <module>SystemExample</module>
         <module>StringEx</module>
         <module>Nesne</module>
+        <module>AppsWorking</module>
     </modules>
     <packaging>pom</packaging>
 
