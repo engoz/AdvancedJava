@@ -18,15 +18,16 @@ public class HashMapExample2 {
         objectlist.add(new MyObject("3", 100, true));
         objectlist.add(new MyObject("4", 100, false));
 
-
-        for (Iterator<MyObject> iterator = objectlist.iterator();
-             iterator.hasNext(); ) {
+        System.out.println("First Size " + objectlist.size());
+        for (Iterator<MyObject> iterator = objectlist.iterator(); iterator.hasNext(); ) {
             MyObject obje = iterator.next();
             if (obje.getDelete() == true) {
                 iterator.remove();
             }
             System.out.println(obje.getId() + " - " + obje.getAmaount() + " " + obje.getDelete());
         }
+
+        System.out.println("Last Size " + objectlist.size());
     }
 
     public static class MyObject {

@@ -7,8 +7,9 @@ public class ArraySizeTest2 {
 
     public static void main(String args[]) {
         int[] primes = {2, 3, 5, 7, 11, 13, 17};
+        System.out.println("Size : " +primes.length);
         for (int i = primes.length - 1; i > 0; i--) {
-            System.out.println(primes[i]);
+            System.out.println(i + " - " + primes[i]);
         }
 
 

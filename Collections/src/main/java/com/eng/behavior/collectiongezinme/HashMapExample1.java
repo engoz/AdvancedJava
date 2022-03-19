@@ -2,12 +2,11 @@ package com.eng.behavior.collectiongezinme;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
-/**
- * Created by servicium on 19.02.2016.
- */
-public class HashMapExample {
+public class HashMapExample1 {
     public static void main(String[] args) {
 
         Map<String, BigDecimal> newMap = new HashMap<String, BigDecimal>();
@@ -15,12 +14,15 @@ public class HashMapExample {
         newMap.put("2", new BigDecimal(213.35));
         newMap.put("3", new BigDecimal(213.36));
         newMap.put("4", new BigDecimal(213.37));
-        for (Map.Entry<String, BigDecimal> entry : newMap.entrySet()) {
+        Set<Map.Entry<String, BigDecimal>> entries = newMap.entrySet();
+
+        for (Iterator<Map.Entry<String, BigDecimal>> iterator = entries.iterator(); iterator.hasNext();) {
             //map gezerken remove edilemez önemli
-            if (entry.getKey() == "2") {
-                newMap.remove(entry.getKey());
+            Map.Entry<String, BigDecimal> next = iterator.next();
+            if (next.getKey() == "2") {
+                newMap.remove(next.getKey() );
             }
-            System.out.println(entry.getKey() + " " + entry.getValue());
+            System.out.println(next.getKey() + " " + next.getValue());
         }
 
     }
