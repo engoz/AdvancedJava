@@ -1,10 +1,9 @@
-package basic.yaklasim;
+package yaklasim;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.ConcurrentMap;
 
 public class PastByValueCollections {
 

@@ -1,5 +1,6 @@
 package com.eng.videoLessons.app;
 
+import com.eng.videoLessons.inf.PersonInterface;
 import com.eng.videoLessons.model.Person;
 
 
@@ -29,7 +30,10 @@ public class UseDefaultMethod {
 
     private static void displayPeople(List<Person> personList, Predicate<Person> predicate) {
         personList.forEach(person -> {
-            if (predicate.test(person)) System.out.println(person.displayPersonInfo());
+            if (predicate.test(person)) {
+                System.out.println(person.displayPersonInfo());
+                PersonInterface.getPersonInfo(person);
+            }
         });
     }
 }

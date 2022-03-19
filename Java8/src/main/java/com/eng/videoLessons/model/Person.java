@@ -47,6 +47,8 @@ public class Person implements PersonInterface {
     public String getInfo() {
         return name + "( " + age + " )";
     }
+    
+
 
 
     public static int compareAge(Person p1, Person p2) {

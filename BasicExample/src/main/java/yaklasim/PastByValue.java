@@ -1,4 +1,4 @@
-package basic.yaklasim;
+package yaklasim;
 
 public class PastByValue {
     public static void main(String[] args) {
