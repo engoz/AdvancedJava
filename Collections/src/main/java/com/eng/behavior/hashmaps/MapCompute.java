@@ -19,7 +19,7 @@ public class MapCompute {
         map.compute("Name", (key, val)
                 -> val.concat(" Singh"));
         map.compute("Address", (key, val)
-                -> val.concat(" West-Bengal"));
+                -> val = " West-Bengal");
 
         // print new mapping
         System.out.println("New Map: " + map);

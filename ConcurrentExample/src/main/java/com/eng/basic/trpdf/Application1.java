@@ -1,11 +1,9 @@
-package com.eng.basic;
+package com.eng.basic.trpdf;
 
-/**
- * Created by servicium on 12.10.2016.
- */
-public class Application {
+public class Application1 {
 
     private int count = 0;
+
 
     public synchronized void increment(){
         count++;
@@ -15,7 +13,7 @@ public class Application {
         Thread t1 = new Thread(new Runnable() {
             public void run() {
                 for (int i=0; i<10000; i++){
-                    increment();
+                    count++;
                 }
             }
         });
@@ -23,7 +21,7 @@ public class Application {
         Thread t2 = new Thread(new Runnable() {
             public void run() {
                 for (int i=0; i<10000; i++){
-                    increment();
+                    count++;
                 }
             }
         });
@@ -44,7 +42,7 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        Application application = new Application();
+        Application1 application = new Application1();
         application.doCount();
         application.yaz();
     }

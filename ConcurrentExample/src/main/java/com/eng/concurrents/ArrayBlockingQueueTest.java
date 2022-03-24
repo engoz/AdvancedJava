@@ -50,7 +50,7 @@ public class ArrayBlockingQueueTest {
         public void run() {
             try {
                 while (true) {
-                    final String data = bq.take();
+                    final String data = bq.poll();
                     System.out.println("Consumer has consumed.." + data);
                 }
             } catch (final Exception e) {

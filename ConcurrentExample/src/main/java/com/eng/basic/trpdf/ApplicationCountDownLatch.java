@@ -1,4 +1,4 @@
-package com.eng.countdown;
+package com.eng.basic.trpdf;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * Created by enginoz on 10/12/16.
  */
-public class Application {
+public class ApplicationCountDownLatch {
 
     public static void main(String[] args) {
         CountDownLatch latch = new CountDownLatch(3);
@@ -39,7 +39,7 @@ class Processor implements Runnable {
 
 
     public void run() {
-        System.out.println("Thread adı." + Thread.currentThread().getName() + "" + latch.getCount());
+        System.out.println("Thread adı." + Thread.currentThread().getName() + " - " + latch.getCount());
 
         try {
             Thread.sleep(1000);

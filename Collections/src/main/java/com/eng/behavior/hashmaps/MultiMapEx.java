@@ -21,7 +21,7 @@ public class MultiMapEx {
         });
     }
 
-    private static <KEY, VALUE> void put(Map<KEY, List<VALUE>> map, KEY key, VALUE value) {
+    private static <K, V> void put(Map<K, List<V>> map, K key, V value) {
         map.compute(key, (s, strings) -> strings == null ? new ArrayList<>() : strings).add(value);
     }
 }

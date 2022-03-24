@@ -17,6 +17,7 @@ public class HashTableDemo3 {
         ht.put("1", "Medrese");
         ht.put("2", "Darulfünun");
         ht.put("3", "Üniversite");
+        ht.put("3", "Üniv");
         Collection c = ht.values();
         System.out.println("Hashtable'in öğeleri :");
 // koleksiyon üzerinde Iterator
