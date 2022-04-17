@@ -9,12 +9,16 @@ public class MapComputeIfAbsent {
         nameMap.put("Engin", 100);
         Integer value = nameMap.computeIfAbsent("Engin", s -> s.length());
         Integer value2 = nameMap.computeIfAbsent("Can", s -> s.length());
+
+        System.out.println("ComputeIfApsent with present value " + value);
+        System.out.println("ComputeIfApsent with apsent value " + value2);
+
         Integer mer = nameMap.putIfAbsent("put", 50);
+        System.out.println("PutIfApsent with apsent value " + mer);
+        System.out.println("PutIfApsent get " + nameMap.get("put"));
+
         Integer mer2 = nameMap.putIfAbsent("put", 100);
-        System.out.println(value);
-        System.out.println(value2);
-        System.out.println("Put If Apsent " + mer);
-        System.out.println("Put If Apsent " + nameMap.get("put"));
-        System.out.println("Put If Apsent " + mer2);
+        System.out.println("PutIfApsent with present value " + mer2);
+        System.out.println("PutIfApsent get " + nameMap.get("put"));
     }
 }
