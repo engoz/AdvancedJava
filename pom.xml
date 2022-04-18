@@ -30,9 +30,6 @@
         <module>StringEx</module>
         <module>Nesne</module>
         <module>AppsWorking</module>
-        <module>JavaYazilimTasarimi</module>
-        <module>JavaYazilimTasarim</module>
-        <module>EffectiveJava</module>
         <module>GenericsExample</module>
     </modules>
     <packaging>pom</packaging>
