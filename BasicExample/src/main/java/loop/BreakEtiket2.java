@@ -8,6 +8,7 @@ public class BreakEtiket2 {
 
         etiket:
         for(int x=0;x<8;x++){
+            System.out.println("x :" + x);
             for(int y=0;y<=10;y++){
                 if(y==8)
                     break etiket; //Eğer y değeri 8 olursa etiket ifadesinin altındaki döngüyü bırak git.

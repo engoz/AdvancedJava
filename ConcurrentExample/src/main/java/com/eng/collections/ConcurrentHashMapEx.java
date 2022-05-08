@@ -25,7 +25,7 @@ public class ConcurrentHashMapEx {
 
             compute(): Örnek: map.compute(word, (String key, Integer value) -> ++value); word ün olupolmamasınıkontroletmedenvalue’yıartırmaya çalışır
 
-    putIfAbsent: Key yoksa yeni değeri koyar ve return eder. varsa return eder. Güncelleme yapmaz.Örnek: map.putIfAbsent(“key1”, 4.5);
+    putIfAbsent: Key yoksa yeni değeri koyar ve return null döner. varsa return eder. Güncelleme yapmaz.Örnek: map.putIfAbsent(“key1”, 4.5);
 
     computeIfAbsent: Key yoksa yeni değeri hesaplar, koyar ve return eder. varsa return eder. Güncelleme yapmaz.Örnek: map.computeIfAbsent(“key1”, var1+var2);
 

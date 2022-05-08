@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ExecuterExample {
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        ExecutorService executorService = Executors.newFixedThreadPool(1);
         for (int i =0; i<=5; i++){
             executorService.submit(new MyProcessor(i));
         }

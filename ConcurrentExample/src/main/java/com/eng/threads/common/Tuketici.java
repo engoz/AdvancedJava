@@ -14,7 +14,7 @@ public class Tuketici extends Thread {
         int deger=0;
         for (int i=0; i<10; i++){
             deger = serbestBolge.veriAl();
-            System.out.println("Tuketici Alinan Veri" + deger);
+            System.out.println("Tuketici Alinan Veri -> " + deger);
             try {
                 sleep((int)(Math.random() * 100));
             } catch (InterruptedException e) {

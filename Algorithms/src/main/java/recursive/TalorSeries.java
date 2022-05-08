@@ -1,4 +1,4 @@
-package basic.recursive;
+package recursive;
 
 public class TalorSeries {
     static float fakt(float k){

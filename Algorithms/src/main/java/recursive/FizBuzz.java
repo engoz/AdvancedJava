@@ -1,4 +1,4 @@
-package basic.recursive;
+package recursive;
 
 public class FizBuzz {
     public static void main(String[] args) {

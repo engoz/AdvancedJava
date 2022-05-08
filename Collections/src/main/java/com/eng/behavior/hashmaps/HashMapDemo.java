@@ -12,7 +12,7 @@ import java.util.Set;
 public class HashMapDemo {
 
     public static void main(String[] args) {
-        Map<Integer, Character> m = new HashMap<Integer, Character>();
+        Map<Integer, Character> m = new HashMap<Integer, Character>(100000,0.9f);
 
         for (int i = 65; i < 90; i++) {
             m.put(i, (char) i);

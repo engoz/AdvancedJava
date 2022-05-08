@@ -14,21 +14,25 @@ public class Main {
         int numWorkers = 2;
         Worker[] workers = new Worker[numWorkers];
         for (int i = 0; i < workers.length; i++) {
-            workers[i] = new Worker(queue);
+            workers[i] = new Worker(queue,i);
             workers[i].start();
         }
 
         for (int i = 0; i < 100; i++) {
             queue.put(i);
         }
+
+
     }
 }
 
 class Worker extends Thread {
+    int id;
     BlockingQueue<Integer> q;
 
-    Worker(BlockingQueue<Integer> q) {
+    Worker(BlockingQueue<Integer> q, int id) {
         this.q = q;
+        this.id=id;
     }
 
     public void run() {
@@ -38,7 +42,7 @@ class Worker extends Thread {
                 if (x == null) {
                     break;
                 }
-                System.out.println(x);
+                System.out.println(this.id +" - " +x);
             }
         } catch (InterruptedException e) {
         }

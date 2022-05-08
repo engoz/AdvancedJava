@@ -33,6 +33,15 @@ public class MapPutIfAppsent {
         // Displayin the new map
         System.out.println("New mappings are: "
                 + chm);
+
+        String returned_value2 = (String) chm.putIfAbsent(108, "ME");
+
+        System.out.println("Returned value is: "
+                + returned_value2);
+
+        System.out.println("New mappings are: "
+                + chm);
+
     }
 
     public static void methot2() {

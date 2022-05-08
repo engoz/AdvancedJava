@@ -19,6 +19,7 @@ public class StackDemo7 {
         st.add("88");
         st.add("99");
         st.add("100");
+        System.out.println(st);
         if (st.contains("33"))
             System.out.println("Aranan öğe bulundu!");
     }

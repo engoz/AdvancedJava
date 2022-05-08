@@ -5,7 +5,7 @@ package com.eng.threads.common;
  */
 public class SerbestPazar {
     public static void main(String[] args) {
-        SerbestBolge sb = new SerbestBolge();
+        SerbestBolge2 sb = new SerbestBolge2();
         Uretici u = new Uretici(sb);
         Tuketici t = new Tuketici(sb);
         u.start();

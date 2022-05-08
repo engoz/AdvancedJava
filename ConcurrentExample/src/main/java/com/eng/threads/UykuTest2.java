@@ -9,14 +9,15 @@ class YarisArabasiBir extends Thread{
     public void run(){
         for(int i=0; i<10; i++){
             try{
-                if(this.isInterrupted()){
+                boolean interrupted = this.isInterrupted();
+                if(interrupted){
                     System.out.println("yaris arabasi bir uyku bolundu - "+ Thread.interrupted() + " - " + this.isInterrupted());
-                }else {
-                    System.out.println("yaris arabasi bir uyuyor");
                 }
+                    System.out.println("yaris arabasi bir uyuyor");
+
                     Thread.sleep(60*10);
             }catch(InterruptedException ex){
-                System.out.println("Bir Exception Fırlattı ");
+            //    System.out.println("Bir Exception Fırlattı ");
             }
         }
     }
@@ -27,14 +28,15 @@ class YarisArabasiIki extends Thread{
     public void run(){
         for(int i=0; i<10; i++){
             try{
-                if(this.isInterrupted()){
+                boolean interrupted = this.isInterrupted();
+                if(interrupted){
                     System.out.println("Yarisarabasi iki uyku bolundu -"+ this.isInterrupted());
-                }else {
-                    System.out.println("yaris arabasi iki uyuyor");
                 }
+                    System.out.println("yaris arabasi iki uyuyor");
+
                     Thread.sleep(60*10);
             }catch(InterruptedException ex){
-                System.out.println("iki Exception Fırlattı ");
+            //    System.out.println("iki Exception Fırlattı ");
             }
         }
     }

@@ -13,7 +13,7 @@ public class Uretici extends Thread{
     public void run() {
         for (int i=0; i<10; i++){
             serbestBolge.veriKoy(i);
-            System.out.println("Üretici Koyulan Veri" + i);
+            System.out.println("Üretici Koyulan Veri -> " + i);
             try {
                 sleep((int)(Math.random() * 100));
             } catch (InterruptedException e) {

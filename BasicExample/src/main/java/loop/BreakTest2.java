@@ -14,5 +14,6 @@ public class BreakTest2 {
                 System.out.println("i ="+i+", j= "+j);
             }
         }
+        System.out.println("Etiket dışı");
     }
 }
