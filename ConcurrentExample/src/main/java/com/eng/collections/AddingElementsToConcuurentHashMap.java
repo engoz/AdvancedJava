@@ -17,6 +17,7 @@ public class AddingElementsToConcuurentHashMap {
         my_cmmap.put("4", "1");
         my_cmmap.put("5", "1");
         my_cmmap.put("6", "1");
+        my_cmmap.put("6", "5");
 
         // Printing the map
         System.out.println("Mappings of my_cmmap : "

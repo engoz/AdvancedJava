@@ -13,9 +13,10 @@ public class CallableExampleSingle {
     public static void main(String[] args) {
 
         FactorialCalculator factorialCalculator = new FactorialCalculator(10);
-
+        long start = System.nanoTime();
         Future<Integer> future = threadService.submit(factorialCalculator);
-
+        long end = System.nanoTime();
+        System.out.println(end-start);
         try {
             System.out.println("Sonuc " + future.get() + "Future is " + future.isDone());
         } catch (InterruptedException e) {

@@ -24,7 +24,7 @@ public class URLClassLoaderTest {
         URLClassLoader urlClassLoader = new URLClassLoader(classLoaderUrls);
 
         // Load the target class
-        Class<?> appClass = urlClassLoader.loadClass("com.eng.App");
+        Class<?> appClass = urlClassLoader.loadClass("com.eng.ExaptionApp");
 
         // Create a new instance from the loaded class
         Constructor<?> constructor = appClass.getConstructor();

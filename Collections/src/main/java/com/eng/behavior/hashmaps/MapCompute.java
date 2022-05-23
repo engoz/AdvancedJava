@@ -21,6 +21,8 @@ public class MapCompute {
         map.compute("Address", (key, val)
                 -> val = " West-Bengal");
 
+        map.compute("Can", (key, val)
+                -> val = val.concat(" Öz"));
         // print new mapping
         System.out.println("New Map: " + map);
     }

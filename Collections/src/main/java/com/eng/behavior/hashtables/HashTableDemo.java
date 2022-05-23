@@ -19,6 +19,7 @@ public class HashTableDemo {
         hTable.put(new Integer(232), "Izmir");
         hTable.put(new Integer(284), "Edirne");
         hTable.put(new Integer(285), "");
+        hTable.put(new Integer(121), "null");
 // Hashtable öğelerini yazdır
         System.out.println(hTable);
 // anahtar ve değerlere erismek için Hashtable sıralaması

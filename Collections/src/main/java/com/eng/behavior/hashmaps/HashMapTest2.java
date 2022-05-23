@@ -11,7 +11,7 @@ public class HashMapTest2 {
         m1.put("Sanat", "3");
         m1.put("Edebiyat", "5");
         m1.put("Siyaset", "9");
-        m1.put(null, "");
+        m1.put(null, null);
 
         Map<Integer, Map> m2 = new HashMap();
         m2.put(1, m1);

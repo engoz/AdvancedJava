@@ -25,7 +25,10 @@ public class CallableExample {
         {
             Integer number = random.nextInt(10);
             FactorialCalculator calculator  = new FactorialCalculator(number);
+            long start = System.nanoTime();
             Future<Integer> result = executor.submit(calculator);
+            long end = System.nanoTime();
+            System.out.println(end-start);
             resultList.add(result);
         }
 

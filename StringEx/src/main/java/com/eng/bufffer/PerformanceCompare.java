@@ -11,6 +11,13 @@ public class PerformanceCompare {
         }
         System.out.println("Time taken by String: " + (new Date().getTime() - startTimeOfString) + "ms");
 
+        startTimeOfString = new Date().getTime();
+        String stringC = "Dwight";
+        for (int i = 0; i < 10000; i++) {
+            stringC = stringC.concat("Schrute");
+        }
+        System.out.println("Time taken by Concat: " + (new Date().getTime() - startTimeOfString) + "ms");
+
         long startTimeOfStringBuffer = new Date().getTime();
         StringBuffer stringBuffer = new StringBuffer("Dwight");
         for (int i = 0; i < 10000; i++) {

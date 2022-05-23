@@ -10,7 +10,6 @@
         <module>BasicExample</module>
         <module>WebSocket</module>
         <module>FileEx</module>
-        <module>Swing</module>
         <module>Collections</module>
         <module>ServerEx</module>
         <module>Java8</module>
@@ -28,10 +27,12 @@
         <module>ConcurrentExample</module>
         <module>SystemExample</module>
         <module>StringEx</module>
+        <!-- module>Swing</module -->
         <module>Nesne</module>
         <module>AppsWorking</module>
         <module>GenericsExample</module>
         <module>Qualifier</module>
+        <module>Performance</module>
     </modules>
     <packaging>pom</packaging>
 
