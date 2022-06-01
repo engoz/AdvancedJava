@@ -63,8 +63,7 @@ public class ForwardBackwardIteration {
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
-    public void
-            () {
+    public void forwardIteration2() {
         final int len = values.length - 1;
         for (int i = len; i >= 0; i--) {
             int value = i < 10_000 ? values[i] : 2 * values[i];
