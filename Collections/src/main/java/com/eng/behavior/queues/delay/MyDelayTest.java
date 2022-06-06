@@ -19,8 +19,10 @@ public class MyDelayTest {
                     int i = random.nextInt(1000);
                     // putting elements in delay queue
                     try {
-                        delayQueue.put(new MyDelay("item" + i, delay));
-                        Thread.sleep(2000);
+                        MyDelay myDelay = new MyDelay("item" + i, delay);
+                        delayQueue.put(myDelay);
+                        System.out.println("Size = " +delayQueue.size() +" Producer Consumed - " + delayQueue.peek());
+                        Thread.sleep(5000);
                     } catch (InterruptedException e) {
                         System.out.println("Error while putting values in the Queue " + e.getMessage());
                     }

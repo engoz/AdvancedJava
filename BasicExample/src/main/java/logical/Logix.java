@@ -2,7 +2,7 @@ package logical;
 
 public class Logix {
     public static void main(String[] args) {
-        boolean check = true;
+        boolean check = false;
 
         if (check) {
             System.out.println("Running if Block");
