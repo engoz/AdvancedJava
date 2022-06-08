@@ -1,4 +1,4 @@
-package com.eng.collections;
+package com.eng.collections.maps;
 
 /**
  * Created by enginoz on 04/03/17.
