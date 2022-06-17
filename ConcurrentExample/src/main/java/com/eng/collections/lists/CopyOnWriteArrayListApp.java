@@ -1,4 +1,4 @@
-package com.eng.collections;
+package com.eng.collections.lists;
 
 /**
  * Created by servicium on 25.12.2015.

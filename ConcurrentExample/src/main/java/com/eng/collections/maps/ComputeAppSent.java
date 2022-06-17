@@ -1,4 +1,4 @@
-package com.eng.collections;
+package com.eng.collections.maps;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,9 @@ public class ComputeAppSent {
         Map<String, Integer> stringLength = new HashMap<>();
         stringLength.put("John",3);
         Integer john = stringLength.computeIfAbsent("John", s -> s.length()+ 5);
+        Integer eng = stringLength.computeIfAbsent("Engin", s -> s.length()+ 5);
         System.out.println(john);
+        System.out.println(eng);
         System.out.println(stringLength);
     }
 }
