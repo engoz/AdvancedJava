@@ -1,4 +1,4 @@
-package main;
+package com.eng;
 
 /**
  * Created by servicium on 10.06.2015.
