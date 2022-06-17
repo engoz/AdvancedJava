@@ -1,4 +1,10 @@
 package com.eng.strings;
+/*
+* Note: We can use == operators for reference comparison (address comparison) and .equals() method for content comparison.
+* In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+*
+* */
+
 
 public class EqualsEx {
     public static void main(String[] args) {
