@@ -25,6 +25,12 @@ public class LongStreamEx {
 
         // Displaying the LongStream having single element
         stream3.forEach(System.out::println);
+
+        // Creating an LongStream having single element only
+        LongStream stream4 = LongStream.of(-7L);
+
+        // Displaying the LongStream having single element
+        stream4.forEach(System.out::println);
     }
 
 }

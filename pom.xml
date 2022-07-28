@@ -33,6 +33,7 @@
         <module>GenericsExample</module>
         <module>Qualifier</module>
         <module>Performance</module>
+        <module>Networks</module>
         <module>Interview</module>
     </modules>
     <packaging>pom</packaging>
